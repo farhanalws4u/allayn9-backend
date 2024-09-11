@@ -2,9 +2,7 @@ import mongoose from "mongoose";
 
 export function dbConnection() {
   mongoose
-    .connect(
-      process.env.MONGO_URL
-    )
+    .connect(`mongodb+srv://ecommerce:ecommerce123@cluster0.b649qmo.mongodb.net/Ecommerce-App`)
     .then(() => {
       console.log("DB Connected Succesfully");
     })
